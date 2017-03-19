@@ -1,6 +1,6 @@
 # Google Translator in your terminal
 
-This is a simple translator using Async/Await in Node 7 for experimental and a fallback to Promise in Node < 7. 
+This is a simple Node ClI translator via Google translate that uses Async/Await in Node 7 and a fallback to Promise in Node < 7. 
 
 ## Installation
 
@@ -11,6 +11,12 @@ npm install --global gtransit
 
 ````
 npm test
+````
+
+## Fun Test
+
+````
+npm run fun
 ````
 
 ## Commands
@@ -54,7 +60,7 @@ npm test
 
 ## Bug
 
-Please open your issue (HERE)[https://github.com/mhadaily/gtransit/issues]
+Please open your issue [HERE](https://github.com/mhadaily/gtransit/issues)
 
 ## Contribution
 

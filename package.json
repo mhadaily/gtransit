@@ -12,11 +12,15 @@
         "i18n",
         "i10n"
     ],
+    "engines": {
+        "node": ">=4.2.4"
+    },
     "bin": {
         "gtransit": "src/index.js"
     },
     "scripts": {
-        "test": "mocha"
+        "test": "mocha --reporter spec",
+        "fun": "mocha --reporter nyan"
     },
     "author": "Majid Hajian <mhadaily@gmail.com>",
     "homepage": "https://www.majidhajian.com",
