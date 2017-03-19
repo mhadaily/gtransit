@@ -57,7 +57,7 @@ npm run fun
     -t --target [targetLang]  This is target lang
 
 ````
-![gTransIt](https://www.majidhajian.com/images/gtransit.git "gTransIt")
+![gTransIt](https://www.majidhajian.com/images/gtransit.gif "gTransIt")
 
 ## Bug
 
