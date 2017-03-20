@@ -43,10 +43,10 @@ npm run fun
 
   Usage:
 
-    $ gtransme t "Hello world" -o en -t fr
-    $ gtransme t Hello -t ar
-    $ gtransme l
-    $ gtransme s czech
+    $ gtransit t "Hello world" -o en -t fr
+    $ gtransit t Hello -t ar
+    $ gtransit l
+    $ gtransit s czech
     $ gtransit s "Haitian Creole"
 
   Command: translate|t [options] <yourText>
