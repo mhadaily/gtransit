@@ -84,10 +84,10 @@ program
         console.log('');
         console.log(chalk.cyan('  Usage:'));
         console.log('');
-        console.log(`    $ gtransme t "Hello world" -o en -t fr`);
-        console.log(`    $ gtransme t Hello -t ar`);
-        console.log(`    $ gtransme l`);
-        console.log(`    $ gtransme s czech`);
+        console.log(`    $ gtransit t "Hello world" -o en -t fr`);
+        console.log(`    $ gtransit t Hello -t ar`);
+        console.log(`    $ gtransit l`);
+        console.log(`    $ gtransit s czech`);
         console.log(`    $ gtransit s "Haitian Creole"`);
         console.log('');
     });
