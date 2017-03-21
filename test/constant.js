@@ -1,0 +1,1 @@
+module.exports = { q: 'Love', tl: 'fr', sl: 'en' };
