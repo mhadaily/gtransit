@@ -7,6 +7,7 @@ const chalk = require('chalk');
 const handleError = require('./modules/handleError');
 const langList = require('./modules/langList');
 const searchLang = require('./modules/searchLang');
+const sayIt = require('./modules/say');
 
 const packagePath = path.join(__dirname, '/../');
 const { version } = require(packagePath + 'package');
@@ -28,7 +29,8 @@ program
     .command('translate <yourText>').alias('t')
     .option('-s --source [sourceLang]', 'This is original lang')
     .option('-t --target [targetLang]', 'This is target lang')
-    .description('just type yout phrase or word')
+    .option('--say', 'This will say your translation.')
+    .description('just type your phrase or word')
     .action((yourText, options) => {
 
         const sl = options.source || 'en';
@@ -44,6 +46,31 @@ program
                 console.log(`Orig: ${orig}`);
                 console.log(`Trans: ${trans}`);
                 console.log(chalk.gray('*********************'));
+
+              if(options.say){
+                const text = translation.trans;
+                const voice = null;
+                const speed = 1;
+                const supportedLang = ['en', 'fr', 'it', 'es', 'nl', 'pl', 'pt', 'sv', 'nb', 'fi', 'de', 'da'];
+
+                console.log(chalk.gray('Start Saying...'));
+
+                if(supportedLang.includes(tl)){
+                  //check if they passed target lang
+                  if(!options.target){
+                    return console.log(chalk.red('Sorry, you have not passed your target language'));
+                  }
+                  //say translation if supported
+                  sayIt(text, voice, speed);
+                  console.log(chalk.yellow(text));
+                } else {
+                  // if target language is not in the supported languages list
+                  return console.error(chalk.red(`Sorry, ${tl} is not supported yet.`));
+                }
+
+                console.log(chalk.gray('Saying Done.'));
+
+              }
 
             })
             .catch(err => {
