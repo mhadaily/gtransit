@@ -1,4 +1,3 @@
-const chalk = require('chalk');
 const langList = require('./langList');
 
 module.exports = (language) => {

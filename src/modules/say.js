@@ -2,14 +2,12 @@ const say = require('say');
 const chalk = require('chalk');
 
 module.exports = (text, voice, speed) => {
-
   //will say the text that is being sent with default value for all operation system.
   say.speak(text, voice, speed, (error) => {
     if (error) {
       return console.log(chalk.red('Error speaking!', error));
     }
   });
-
   // Will fire stop function later,
   // setTimeout(() => {
   //   say.stop(err => {
@@ -18,6 +16,5 @@ module.exports = (text, voice, speed) => {
   //     }
   //   });
   // }, 1000);
-
 };
 
