@@ -111,7 +111,7 @@ program
     console.log('');
     console.log(chalk.cyan('  Usage:'));
     console.log('');
-    console.log(`    $ gtransit t "Hello world" -o en -t fr`);
+    console.log(`    $ gtransit t "Hello world" -s en -t fr`);
     console.log(`    $ gtransit t Hello -t ar`);
     console.log(`    $ gtransit l`);
     console.log(`    $ gtransit s czech`);
@@ -119,7 +119,7 @@ program
     console.log('');
     console.log(chalk.cyan('  Text To Speech:'));
     console.log('');
-    console.log(`    $ gtransit t "Hello world" -o en -t fr --say`);
+    console.log(`    $ gtransit t "Hello world" -s en -t fr --say`);
     console.log(`    $ gtransit t Hello -t fr --say`);
     console.log('');
   });
