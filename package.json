@@ -19,8 +19,8 @@
         "gtransit": "src/index.js"
     },
     "scripts": {
-        "test": "mocha --reporter spec",
-        "fun": "mocha --reporter nyan"
+        "test": "mocha test/index.spec.js --reporter spec",
+        "fun": "mocha test/index.spec.js --reporter nyan"
     },
     "author": "Majid Hajian <mhadaily@gmail.com>",
     "homepage": "https://www.majidhajian.com",
