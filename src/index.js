@@ -9,7 +9,7 @@ const langList = require('./modules/langList');
 const searchLang = require('./modules/searchLang');
 
 const packagePath = path.join(__dirname, '/../');
-const packageVersion = require(packagePath + 'package').version;
+const { version } = require(packagePath + 'package');
 
 const nodeVersion = Number(process.version.match(/^v(\d)/)[1]);
 
@@ -22,7 +22,7 @@ if (nodeVersion < 7) {
 }
 
 program
-    .version(packageVersion);
+    .version(version);
 
 program
     .command('translate <yourText>').alias('t')
