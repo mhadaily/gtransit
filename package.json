@@ -1,6 +1,6 @@
 {
     "name": "gtransit",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A CLI tool that translates your words in your terminal via Google translator. It gives you the abilly to speak your output loud.",
     "main": "src/index.js",
     "keywords": [

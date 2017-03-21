@@ -44,7 +44,7 @@ npm run fun
 
   Usage:
 
-    $ gtransit t "Hello world" -o en -t fr
+    $ gtransit t "Hello world" -s en -t fr
     $ gtransit t Hello -t ar
     $ gtransit l
     $ gtransit s czech
@@ -92,7 +92,7 @@ and pressing `TAB`.  Then take the name of the voice you'd like to try, minus th
 
 The `export` method is not yet available.
 
-Try the following commad to install Festival as well as a default voice:
+Try the following command to install Festival as well as a default voice:
 
 ```shell
 sudo apt-get install festival festvox-kallpc16k
