@@ -3,14 +3,14 @@
 const path = require('path');
 const program = require('commander');
 const chalk = require('chalk');
+const fs = require("fs");
 
 const handleError = require('./modules/handleError');
 const langList = require('./modules/langList');
 const searchLang = require('./modules/searchLang');
 const sayIt = require('./modules/say');
 
-const packagePath = path.join(__dirname, '/../');
-const {version} = require(packagePath + 'package');
+const version = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'))).version;
 
 const nodeVersion = Number(process.version.match(/^v(\d)/)[1]);
 
