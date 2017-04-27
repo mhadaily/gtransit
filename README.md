@@ -105,6 +105,11 @@ sudo apt-get install festival festvox-kallpc16k
 * Linux with Festival installed
 * Windows (comes with SAPI.SpVoice)
 
+## Todo
+* need to support older Node version easily. (refactoring modules)
+* support other translator as well. 
+* bring a comparision table between translator as a suggestion
+
 ## Bug
 
 Please open your issue [HERE](https://github.com/mhadaily/gtransit/issues)
