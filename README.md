@@ -98,7 +98,6 @@ Try the following command to install Festival as well as a default voice:
 sudo apt-get install festival festvox-kallpc16k
 ```
 
-
 ## Requirements
 
 * Mac OS X (comes with `say`)
