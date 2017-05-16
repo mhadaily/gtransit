@@ -1,6 +1,6 @@
-# Google Translator in your terminal
+# Google translator in your terminal
 
-This is a simple Node CLI translator via Google translate that uses Async/Await in Node 7 and a fallback to Promise in Node < 7. It is able to say 
+This is a simple Node CLI translator via Google translate. It is able to say 
 your translation based on your operating system text-to-speech default. 
 
 ## Installation
